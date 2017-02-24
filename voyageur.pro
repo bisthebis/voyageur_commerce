@@ -5,8 +5,10 @@ CONFIG -= qt
 
 SOURCES += main.cpp \
     city.cpp \
-    world.cpp
+    world.cpp \
+    solutions.cpp
 
 HEADERS += \
     city.h \
-    world.h
+    world.h \
+    solutions.h
