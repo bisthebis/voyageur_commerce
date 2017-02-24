@@ -15,7 +15,7 @@ World::World()
     this->_cities = {A, B, C, D, E};
 }
 
-double World::trySolution(const vector<int>& indices)
+double World::trySolution(const vector<int>& indices) const
 {
 
     assert (indices.size() == _cities.size());
@@ -30,7 +30,7 @@ double World::trySolution(const vector<int>& indices)
         }
     }
     const int length = _cities.size();
-    double sum;
+    double sum = 0;
     for (int i = 0; i < (length - 1); ++i) //The last one should not be compared with its next
     {
         int index = indices[i];

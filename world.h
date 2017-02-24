@@ -8,8 +8,8 @@ class World
 {
 public:
     World();
-    double trySolution(const std::vector<int> &indices);
-
+    double trySolution(const std::vector<int> &indices) const;
+    int size() const {return _cities.size();}
 private:
     std::vector<City> _cities;
 };
