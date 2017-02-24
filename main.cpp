@@ -1,9 +1,11 @@
 #include <iostream>
+#include "world.h"
 
 using namespace std;
 
 int main(int argc, char *argv[])
 {
-    cout << "Hello World!" << endl;
+    World world;
+    cout << world.trySolution({0,1,2,3,4})<< endl;
     return 0;
 }
